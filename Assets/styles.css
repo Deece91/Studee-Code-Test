@@ -91,6 +91,8 @@ div.sign-in-right {
     font-family: PT Sans;
     font-weight: 400;
     margin-bottom: 1em;
+    margin-top: 1em;
+    color: #2B2D4A;
   }
 
   div.form-input {
@@ -128,7 +130,7 @@ div.sign-in-right {
     align-items: center;
     justify-content: center;
     margin-bottom: 1em;
-    padding: 0.8em;
+    padding: 0.81em;
   }
 
   div.facebook {
@@ -142,7 +144,7 @@ div.sign-in-right {
     align-items: center;
     justify-content: center;
     margin-bottom: 2em;
-    padding: 0.8em;
+    padding: 0.81em;
   }
   
   div.google p,
@@ -163,10 +165,109 @@ div.sign-in-right {
     font-family: PT Sans;
     font-size: 2.8rem;
     font-weight: 400;
+    color: #2B2D4A;
+    
   }
   
   div.right-container h3 {
     font-family: PT Sans;
     font-weight: 400;
     font-size: 1.6rem;
+    color: #2B2D4A;
+  }
+
+
+  /* Responiveness */
+
+  @media (max-width: 48em) {
+
+    .header-container {
+        margin-left: 2em;
+      }
+    
+    /* sign in left */
+
+      div.left-container {
+        margin-left: 2em;
+      }
+
+      input {
+        width: 75%;
+        padding: .8em 0.8em;
+      }
+
+      div.alt-sign-in {
+        margin-top: 2em;
+      }
+
+      div.facebook ,div.google {
+        width: 75%;
+        padding: .8em 0.8em; 
+      }
+
+    /* sign in right */
+
+    div.right-container img {
+        width: 12.5em;
+        height: auto;
+      }
+
+  }
+
+  @media (max-width: 23.5em) {
+
+    .header-container {
+        margin-left: 1em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .logo {
+        width: 25vw;
+      }
+    
+    /* sign in left */
+
+      div.sign-in-left {
+        width: 100%;
+
+      }
+      div.left-container {
+        margin-left: 1em;
+      }
+
+      div.form-info h2{
+        font-size: 1.75rem;
+        margin-top: .5em;
+      }
+
+      .p-bold {
+        font-size: 1rem;
+      }
+
+      .form-text {
+        font-size: 1.125rem;
+      }
+
+      input {
+        padding: 0.8em 1em;
+      }
+
+
+      div.alt-sign-in {
+        margin-top: 1em;
+      }
+
+      div.facebook ,div.google {
+        padding: .8em 1em; 
+      }
+
+    /* sing in right */
+
+    div.sign-in-right {
+        display: none;
+      }
+
   }
